@@ -25,7 +25,7 @@ A beautifully designed, mobile-first personal carbon footprint tracker. **trace.
 ### Prerequisites
 - Node.js (v18 or higher)
 - npm
-
+  
 ### Installation
 
 Install the required dependencies:
@@ -39,7 +39,7 @@ Start the local development server (with Vite middleware aNd Express):
 ```bash
 npm run dev
 ```
-The application will be available at `http://localhost:3000`.
+The application will be available at `http://localhost:3000'
 
 ### Production Build
 
