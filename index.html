@@ -3,116 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f1e8" />
-    <title>Trace / Personal carbon footprint</title>
+    <title>Trace - Carbon Footprint</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <header class="topbar">
-        <a class="brand" href="#top" aria-label="Trace home">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span>trace<span class="brand-dot">.</span></span>
-        </a>
-        <nav class="topnav" aria-label="Main navigation">
-          <a class="active" href="#overview">Overview</a>
-          <a href="#history">History</a>
-          <a href="#how-it-works">How it works</a>
-        </nav>
-        <button class="avatar" aria-label="Open profile menu">AS</button>
-      </header>
-
-      <main id="top">
-        <section class="hero" id="overview">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="live-dot"></span> Your footprint, made tangible</p>
-            <h1>Small choices.<br /><em>Visible impact.</em></h1>
-            <p class="hero-lede">A clearer picture of the carbon you create each day — and the choices that can move the needle.</p>
-          </div>
-          <div class="hero-orbit" aria-hidden="true">
-            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-            <div class="orbit-center"><strong id="hero-number">8.4</strong><span>kg CO₂e this week</span></div>
-            <span class="orbit-leaf leaf-a">✦</span><span class="orbit-leaf leaf-b">✧</span>
-          </div>
-        </section>
-
-        <section class="metric-row" aria-label="Footprint summary">
-          <article class="metric-card primary-metric">
-            <div class="metric-label"><span class="metric-icon">◒</span> 7-day average <span class="info">i</span></div>
-            <div class="metric-value"><span id="average-value">8.4</span> <small>kg CO₂e</small></div>
-            <div class="metric-foot"><span class="trend-down">↓ 12%</span> vs. your first week</div>
-          </article>
-          <article class="metric-card">
-            <div class="metric-label"><span class="metric-icon sun">☼</span> Today <span class="info">i</span></div>
-            <div class="metric-value"><span id="today-value">7.2</span> <small>kg CO₂e</small></div>
-            <div class="metric-foot"><span class="neutral-pill">On track</span> 2.1 kg below average</div>
-          </article>
-          <article class="metric-card streak-card">
-            <div class="metric-label"><span class="metric-icon flame">♨</span> Logging streak</div>
-            <div class="metric-value"><span>6</span> <small>days</small></div>
-            <div class="metric-foot streak-line"><span class="streak-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i class="empty"></i></span> Keep it going</div>
-          </article>
-        </section>
-
-        <section class="workspace-grid">
-          <article class="panel chart-panel" id="history">
-            <div class="panel-heading">
-              <div><p class="section-kicker">Your pattern</p><h2>Footprint over time</h2></div>
-              <div class="range-switcher" role="group" aria-label="Chart range"><button class="selected" data-range="7">7 days</button><button data-range="30">30 days</button></div>
-            </div>
-            <div class="chart-wrap">
-              <div class="y-axis"><span>12</span><span>8</span><span>4</span><span>0</span></div>
-              <div class="chart-area">
-                <div class="grid-line one"></div><div class="grid-line two"></div><div class="grid-line three"></div><div class="grid-line four"></div>
-                <svg class="chart-svg" viewBox="0 0 700 240" preserveAspectRatio="none" role="img" aria-label="Footprint chart"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e39d63" stop-opacity=".34"/><stop offset="1" stop-color="#e39d63" stop-opacity="0"/></linearGradient></defs><path id="chart-fill" fill="url(#chartFill)" d="M0,132 L116,104 L233,136 L350,82 L466,116 L583,72 L700,92 L700,240 L0,240 Z"></path><path id="chart-line" fill="none" stroke="#c56d3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M0,132 L116,104 L233,136 L350,82 L466,116 L583,72 L700,92"></path><g id="chart-dots" fill="#f8f5ed" stroke="#c56d3b" stroke-width="3"><circle cx="0" cy="132" r="5"/><circle cx="116" cy="104" r="5"/><circle cx="233" cy="136" r="5"/><circle cx="350" cy="82" r="5"/><circle cx="466" cy="116" r="5"/><circle cx="583" cy="72" r="5"/><circle cx="700" cy="92" r="5"/></g></svg>
-                <div class="x-axis"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
-              </div>
-            </div>
-            <div class="chart-note"><span class="note-mark">↗</span><span><strong>Your lowest day was Saturday.</strong> That’s 28% below your weekly average.</span></div>
-          </article>
-
-          <article class="panel insight-panel">
-            <div class="insight-top"><p class="section-kicker">One thing to notice</p><span class="sparkle">✦</span></div>
-            <h2>Food is your biggest lever</h2>
-            <p class="insight-copy">It makes up <strong>46%</strong> of your footprint this week. Swapping one beef meal for a plant-based option could save around <strong>3.1 kg</strong> CO₂e.</p>
-            <div class="breakdown"><div class="breakdown-item"><span class="legend-dot food"></span><span>Food</span><strong>46%</strong></div><div class="breakdown-item"><span class="legend-dot travel"></span><span>Travel</span><strong>31%</strong></div><div class="breakdown-item"><span class="legend-dot home"></span><span>Home</span><strong>23%</strong></div></div>
-            <button class="text-button" id="try-tip">Explore food swaps <span>→</span></button>
-          </article>
-        </section>
-
-        <section class="log-section" id="log">
-          <div class="section-intro"><div><p class="section-kicker">Make today count</p><h2>Log a choice</h2></div><p>Estimates are based on your inputs. Approximate is still useful.</p></div>
-          <form class="log-form" id="log-form">
-           <label class="field">
-              <span class="field-label"><span class="category-icon travel-icon">↗</span> Commute</span>
-              <select id="commute">
-                <option value="0">No commute today</option>
-                <option value="1.8">Car · 30 min</option>
-                <option value="1.1">Car · 15 min</option>
-                <option value="0.8">Motorcycle / Scooter · 30 min</option>
-                <option value="0.6">Bus or train</option>
-                <option value="0.2">E-Bike / Electric Scooter</option>
-                <option value="0.0">Bicycle / Walk</option>
-              </select>
-            </label>
-            <label class="field"><span class="field-label"><span class="category-icon food-icon">◌</span> Food</span><select id="food"><option value="2.4">Mixed meals</option><option value="4.2">Meat-forward meals</option><option value="1.2">Mostly plant-based</option><option value="0.7">Fully plant-based</option></select></label>
-            <label class="field"><span class="field-label"><span class="category-icon home-icon">⌂</span> Home energy</span><select id="energy"><option value="3">Typical day</option><option value="4.5">High energy day</option><option value="1.7">Low energy day</option><option value="2.1">Renewable energy</option></select></label>
-            <button class="log-button" type="submit"><span>＋</span> Add today</button>
-          </form>
-          <div class="form-feedback" id="form-feedback" role="status"></div>
-        </section>
-
-        <section class="recent-section">
-          <div class="section-intro recent-heading"><div><p class="section-kicker">A little context</p><h2>Recent days</h2></div><button class="text-button" id="view-history">View full history <span>→</span></button></div>
-          <div class="recent-list" id="recent-list"><div class="recent-row"><span class="day-badge">S</span><div class="recent-date"><strong>Saturday, Jun 15</strong><span>7.2 kg CO₂e</span></div><div class="mini-bar"><i style="width: 60%"></i></div><span class="row-tag good">Great day</span><span class="row-arrow">›</span></div><div class="recent-row"><span class="day-badge">F</span><div class="recent-date"><strong>Friday, Jun 14</strong><span>9.6 kg CO₂e</span></div><div class="mini-bar"><i style="width: 80%"></i></div><span class="row-tag">Typical</span><span class="row-arrow">›</span></div><div class="recent-row"><span class="day-badge">T</span><div class="recent-date"><strong>Thursday, Jun 13</strong><span>8.4 kg CO₂e</span></div><div class="mini-bar"><i style="width: 70%"></i></div><span class="row-tag">Typical</span><span class="row-arrow">›</span></div></div>
-        </section>
-      </main>
-      <footer id="how-it-works"><span><strong>trace.</strong> A gentler way to understand impact.</span><span>Estimates use publicly available averages · <button id="assumptions">See assumptions</button></span></footer>
-    </div>
-    <div class="toast" id="toast" role="status"></div>
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

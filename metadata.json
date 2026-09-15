@@ -1,0 +1,6 @@
+{
+  "name": "Trace Carbon Footprint",
+  "description": "A gentler way to understand impact. Personal carbon footprint tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
