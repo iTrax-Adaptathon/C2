@@ -33,9 +33,9 @@ Install the required dependencies:
 npm install
 ```
 
-### Development $
+### Development 
 
-Start the local development server (with Vite middleware and Express):
+Start the local development server (with Vite middleware aNd Express):
 ```bash
 npm run dev
 ```
