@@ -1,4 +1,4 @@
-# trace. 🌱
+# Trace. 🌱
 
 A beautifully designed, mobile-first personal carbon footprint tracker. **trace.** helps you monitor your daily emissions from travel, food, and energy use, turning your environmental impact into a visual "Carbon Garden."
 
